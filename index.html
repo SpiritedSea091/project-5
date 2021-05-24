@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,73 +26,161 @@
   </style>
 </head>
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="background">
   </div>
+  <div class="container row-1 title-section">
+    <div class="title-box">
+      <h1>Social Media Dashboard</h1>
+      <p> Total Followers: 23,004</p>
+    </div>
+    <div class="toggle-box">
+      <p>Dark Mode</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row main-row">
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="color-streak fb">
+          </div>
+          <p>@nathanf</p>
+          <p class="large-num">1987</p>
+          <p>Followers</p>
+          <p class="good-news">12 Today</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="color-streak tw">
+          </div>
+          <p>@nathanf</p>
+          <p class="large-num">1044</p>
+          <p>Followers</p>
+          <p class="good-news">99 Today</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="color-streak ig">
+          </div>
+          <p>@realnathanf</p>
+          <p class="large-num">11k</p>
+          <p>Followers</p>
+          <p class="good-news">1099 Today</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="color-streak yt">
+          </div>
+          <p>Nathan F.</p>
+          <p class="large-num">8239</p>
+          <p>Subscribers</p>
+          <p class="bad-news">144 Today</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- OVERVIEW SECTION ___________________________________ -->
+    <h2>Overview - Today</h2>
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Page Views</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">87</p>
+            <p class="good-news">3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Likes</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">52</p>
+            <p class = "bad-news">2%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Likes</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">5462</p>
+            <p class="good-news">2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Profile Views</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">52k</p>
+            <p class="good-news">1375%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Retweets</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">117</p>
+            <p class="good-news">303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Likes</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">507</p>
+            <p class="good-news">553%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Likes</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">107</p>
+            <p class = "bad-news">19%</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-xs-12">
+        <div class="box">
+          <div class="row-1">
+            <p>Total Views</p>
+          </div>
+          <div class="row-1">
+            <p class="med-num">1407</p>
+            <p class = "bad-news">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
 </body>
 </html>

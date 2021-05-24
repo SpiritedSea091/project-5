@@ -1,0 +1,91 @@
+p{
+  margin: 0;
+}
+body{
+  color: hsl(228, 12%, 44%);
+}
+h1{
+  color: hsl(230, 17%, 14%);
+}
+.background{
+  position: absolute;
+  z-index: -1;
+  height: 30%;
+  background-color: hsl(225, 100%, 98%);
+  border-bottom-left-radius: 30px;
+  width: 100%;
+}
+.title-section{
+  padding: 2% 0  0;
+}
+.row-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-row{
+  justify-content: center;
+}
+.main-row{
+  text-align: center;
+  padding: 5% 0;
+}
+.box{
+  background-color: hsl(227, 47%, 96%);
+  margin: 2% 0;
+  border-radius: 8px;
+  padding: 5%;
+  position: relative;
+  overflow: hidden;
+}
+.large-num{
+  font-size: 3rem;
+  color: hsl(230, 17%, 14%);
+}
+.med-num{
+  font-size: 2rem;
+  color: hsl(230, 17%, 14%);
+}
+
+/* colour streaks on top of boxes */
+.color-streak{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+
+}
+.fb{
+  background-color: hsl(208, 92%, 53%);
+}
+.tw{
+  background-color: hsl(203, 89%, 53%);
+}
+.ig{
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%) ,hsl(329, 70%, 58%) );
+
+
+}
+.yt{
+  background-color: hsl(348, 97%, 39%);
+}
+
+/* Styling increases and decreases in stats */
+.good-news{
+  color: green;
+}
+.good-news::before{
+  content: "▲";
+}
+.bad-news{
+  color: red;
+}
+.bad-news::before{
+  content: "▼";
+}
+
+
+/* font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-weight: 700; */
