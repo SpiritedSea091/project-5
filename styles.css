@@ -46,7 +46,17 @@ h1{
   font-size: 2rem;
   color: hsl(230, 17%, 14%);
 }
-
+.handle-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.large-num-label{
+  text-transform: uppercase;
+}
+.toggle-box{
+  display: flex;
+}
 /* colour streaks on top of boxes */
 .color-streak{
   position: absolute;
@@ -73,19 +83,38 @@ h1{
 
 /* Styling increases and decreases in stats */
 .good-news{
-  color: green;
+  color: hsl(163, 72%, 41%);
 }
 .good-news::before{
   content: "▲";
 }
 .bad-news{
-  color: red;
+  color: hsl(356, 69%, 56%);
 }
 .bad-news::before{
   content: "▼";
 }
 
-
+/* DARK MODE CLASSES */
+body.dark-mode{
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(228, 34%, 66%);
+}
+.background.dark-mode{
+  background-color: hsl(232, 19%, 15%);
+}
+.box.dark-mode{
+  background-color: hsl(228, 28%, 20%);
+}
+h1.dark-mode{
+  color: hsl(0, 0%, 100%);
+}
+.large-num.dark-mode{
+  color: hsl(0, 0%, 100%);
+}
+.med-num.dark-mode{
+  color: hsl(0, 0%, 100%);
+}
 /* font-family: 'Inter', sans-serif;
 font-weight: 400;
 font-weight: 700; */
